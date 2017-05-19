@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "975214623529",
+    "firebase_url": "https://project-aviron.firebaseio.com",
+    "project_id": "project-aviron",
+    "storage_bucket": "project-aviron.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975214623529:android:2eff82c8a7863317",
+        "android_client_info": {
+          "package_name": "com.avironactive.rower"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975214623529-ki8d1k13e23o3e72qv7ns3nbq8o54arm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZL2VOIAPvOdJVC5BOt3Qx-1sLdndhlh8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
