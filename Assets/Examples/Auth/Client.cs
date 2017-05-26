@@ -344,9 +344,9 @@ public class Client : MonoBehaviour {
             Dispatcher.InvokeAsync(() =>
             {
             	//update UI
-            		socketStatus.text = "hello!!!";
+            		socketStatus.text = message["event"];
             });
-            Debug.Log("wtf!!!!!!");
+            Debug.Log(message["event"]);
 
 		}, (JSONClass err) =>
         {
