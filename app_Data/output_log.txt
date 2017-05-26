@@ -1,0 +1,118 @@
+Initialize engine version: 5.6.0f3 (497a0f351392)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD RADEON HD 6450 (ID=0x6779)
+    Vendor:   ATI
+    VRAM:     2295 MB
+    Driver:   15.300.1025.1001
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\Newtonsoft.Json.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\WebSocket4Net.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\WebSocket4Net.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\Facebook.Unity.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\Facebook.Unity.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\Facebook.Unity.Arcade.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\Facebook.Unity.Arcade.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\FacebookNamedPipeClient.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\FacebookNamedPipeClient.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\Facebook.Unity.Settings.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\Facebook.Unity.Settings.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\Firebase.Analytics.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\Firebase.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\Firebase.App.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\Firebase.App.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\Firebase.Auth.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\Firebase.Auth.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\Firebase.Database.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\Firebase.Database.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\Firebase.Messaging.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\Firebase.Messaging.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\Firebase.RemoteConfig.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\Firebase.RemoteConfig.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\Firebase.Storage.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\Firebase.Storage.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\Google.MiniJson.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\Google.MiniJson.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\Google.Sharpen.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\Google.Sharpen.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\Unity.Compat.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\Unity.Compat.dll into Unity Child Domain
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\Unity.Tasks.dll (this message is harmless)
+Loading C:\Aviron\UnityFirebase\app_Data\Managed\Unity.Tasks.dll into Unity Child Domain
+- Completed reload, in  0.026 seconds
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+The referenced script on this Behaviour (Game Object 'Main Camera') is missing!
+ 
+(Filename:  Line: 1743)
+
+UnloadTime: 0.985576 ms
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\System.Configuration.dll (this message is harmless)
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\System.Xml.dll (this message is harmless)
+Emitter on ACK 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Fallback handler could not load library C:/Aviron/UnityFirebase/app_Data/Mono/libc
+Fallback handler could not load library C:/Aviron/UnityFirebase/app_Data/Mono/.\libc
+Fallback handler could not load library C:/Aviron/UnityFirebase/app_Data/Mono/libc
+Platform assembly: C:\Aviron\UnityFirebase\app_Data\Managed\System.Data.dll (this message is harmless)
+connected got called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 187c -> priority: 1 
+  Thread -> id: 289c -> priority: 1 
+  Thread -> id: 4590 -> priority: 1 
+  Thread -> id: 3638 -> priority: 1 
+Socket is not authenticated
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Emitter handleEmitAck
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Aviron event: avironmsg -data: {
+  "msg": "ahihi"
+}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+disconnected got called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+connected got called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Socket is not authenticated
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Emitter handleEmitAck
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Aviron event: avironmsg -data: {
+  "msg": "ahihi"
+}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+

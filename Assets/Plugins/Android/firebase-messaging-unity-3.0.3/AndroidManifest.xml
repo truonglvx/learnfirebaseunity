@@ -8,10 +8,10 @@
   <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
   <permission
-      android:name="com.avironactive.rower.permission.C2D_MESSAGE"
+      android:name="unity.DefaultCompany.UnityFirebaseQuickStart.permission.C2D_MESSAGE"
       android:protectionLevel="signature" />
   <uses-permission
-      android:name="com.avironactive.rower.permission.C2D_MESSAGE" />
+      android:name="unity.DefaultCompany.UnityFirebaseQuickStart.permission.C2D_MESSAGE" />
 
   <application>
     <service android:name="com.google.firebase.messaging.cpp.ListenerService"

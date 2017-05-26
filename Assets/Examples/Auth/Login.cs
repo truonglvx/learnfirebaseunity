@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 using Facebook.Unity;
+using ScClient;
 
 public class Login : MonoBehaviour
 {
@@ -20,37 +21,41 @@ public class Login : MonoBehaviour
     public Button SignupButton, LoginButton;
     public Button FBLoginButton, FBLogoutButton;
     public Button SignupCustomTokenButton;
+    public Button ConnectSC;
     public Text ErrorText;
 
     public Text DisplayName, UserId, Email, PhotoUrl;
 
+    private SocketClient socketClient;
+    public Text ReceiveMsgText;
     void Awake()
     {
-        if (!FB.IsInitialized) 
-        {
-            // Initialize the Facebook SDK
-            FB.Init(InitCallback, OnHideUnity);
-        } 
-        else 
-        {
-            // Already initialized, signal an app activation App Event
-            FB.ActivateApp();
-		}
+        // if (!FB.IsInitialized) 
+        // {
+        //     // Initialize the Facebook SDK
+        //     FB.Init(InitCallback, OnHideUnity);
+        // } 
+        // else 
+        // {
+        //     // Already initialized, signal an app activation App Event
+        //     FB.ActivateApp();
+		// }
 
+         //socketClient = new SocketClient();
     }
 
     void OnDestroy()
     {
-        auth.StateChanged -= AuthStateChanged;
-        auth = null;
+        //auth.StateChanged -= AuthStateChanged;
+        //auth = null;
     }
 
     void Start()
     {
 
-       auth = FirebaseAuth.DefaultInstance;
-       auth.StateChanged += AuthStateChanged;
-       AuthStateChanged(this, null);
+      // auth = FirebaseAuth.DefaultInstance;
+      // auth.StateChanged += AuthStateChanged;
+      // AuthStateChanged(this, null);
         //Just an example to save typing in the login form
         UserNameInput.text = "demofirebase@gmail.com";
         PasswordInput.text = "abcdefgh";
@@ -60,30 +65,39 @@ public class Login : MonoBehaviour
         FBLoginButton.onClick.AddListener(() => loginFacebook());
         FBLogoutButton.onClick.AddListener(() => logoutFacebook());
         SignupCustomTokenButton.onClick.AddListener(() => SignupCustomToken());
+        //ConnectSC.onClick.AddListener(() => SendToSocketCluster());
+    }
+
+
+    void SendToSocketCluster()
+    {
+        socketClient.publish("avironmsg", "hello from publisher!!!");
+        //socketClient.emit("avironmsg", "hello from other side emitter!!!");
+
     }
 
     void AuthStateChanged(object send, System.EventArgs eventArgs) {
-        if(auth.CurrentUser != fbUser) {
-            bool signedIn = fbUser != auth.CurrentUser && auth.CurrentUser != null;
-            if(!signedIn && fbUser != null) {
-                    UpdateErrorMessage("Signed Out: " + fbUser.UserId);
-            }
+        // if(auth.CurrentUser != fbUser) {
+        //     bool signedIn = fbUser != auth.CurrentUser && auth.CurrentUser != null;
+        //     if(!signedIn && fbUser != null) {
+        //             UpdateErrorMessage("Signed Out: " + fbUser.UserId);
+        //     }
 
-            fbUser = auth.CurrentUser;
-            if(signedIn) {
-                UpdateErrorMessage("Signed In: " + fbUser.UserId);
-                DisplayName.text = fbUser.DisplayName ?? "";
-                UserId.text = fbUser.UserId;
-                Email.text = fbUser.Email ?? "";
-                System.Uri url = fbUser.PhotoUrl;
-                string photoUrl = "";
-                if(url != null)
-                {
-                    photoUrl = url.AbsolutePath;
-                }
-                PhotoUrl.text = photoUrl;
-            }
-        }
+        //     fbUser = auth.CurrentUser;
+        //     if(signedIn) {
+        //         UpdateErrorMessage("Signed In: " + fbUser.UserId);
+        //         DisplayName.text = fbUser.DisplayName ?? "";
+        //         UserId.text = fbUser.UserId;
+        //         Email.text = fbUser.Email ?? "";
+        //         System.Uri url = fbUser.PhotoUrl;
+        //         string photoUrl = "";
+        //         if(url != null)
+        //         {
+        //             photoUrl = url.AbsolutePath;
+        //         }
+        //         PhotoUrl.text = photoUrl;
+        //     }
+        // }
     }
 
 
@@ -121,7 +135,7 @@ public class Login : MonoBehaviour
     public void logoutFacebook()
     {
         FB.LogOut ();
-        auth.SignOut();
+        //auth.SignOut();
     }
     
     private void AuthCallback (ILoginResult result)
@@ -200,6 +214,8 @@ public class Login : MonoBehaviour
             UpdateErrorMessage("FireBase Signup Success");
             GetFireBaseToken();
         });
+
+        
     }
 
     private void UpdateErrorMessage(string message)
